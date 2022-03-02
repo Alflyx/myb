@@ -1,0 +1,30 @@
+
+@mixin borderRelief {
+    box-shadow: 3px 3px 20px $black, -3px -3px 20px $ligthGrey;
+} 
+@mixin borderRelief2 {
+    box-shadow: 3px 3px 20px $black inset, -3px -3px 20px $ligthGrey inset;
+} 
+@mixin borderRelief3 {
+    box-shadow: -3px 3px 20px $black, 3px -3px 20px $ligthGrey;
+} 
+
+
+
+@mixin black {
+    box-shadow: 0px 0px 40px 20px $black;
+}
+@mixin grey {
+    box-shadow: 0px 0px 40px 20px $grey;
+}
+@mixin primaryGrey {
+    box-shadow: 0px 0px 40px 20px $primaryGrey;
+}
+@mixin ligthGrey {
+    box-shadow: 0px 0px 40px 20px $ligthGrey;
+}
+@mixin purple {
+    box-shadow: 0px 0px 40px 20px $purple;
+}
+
+

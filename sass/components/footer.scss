@@ -1,0 +1,16 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto ;
+    background: $grey;
+    padding: 10px;
+
+    .footer-nav {
+        background: $grey;
+        grid-column: 1/4;
+        grid-row: 1;
+        @include borderRelief2;
+        border-radius:50px;
+
+    }
+}

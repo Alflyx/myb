@@ -1,0 +1,112 @@
+html, body {
+    margin:0;
+    padding:0;
+    } 
+
+.header {
+    margin: 0;
+    padding: 0;
+    background:$grey;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(40px, auto);
+    z-index: 1;
+
+    .top-header {
+                display:flex;
+                justify-content: space-around;
+        #logo {
+                height: 100px;
+                width: 150px;
+                background : $grey;
+                padding:10px;
+                @include borderRelief;
+                justify-content: center;
+                border-radius : 10%;
+            }
+            
+        .social-media {
+            ul {
+                background: $grey;
+                display:flex;
+                align-items: center;
+                @include borderRelief2;
+                border-radius: 30px 30px 30px 30px;
+                padding: 0;
+
+                li {
+                    list-style: none;
+                    padding: 10px;
+                    margin: 8px;
+
+                        a {
+                                color: $ligthGrey;
+                                @include borderRelief;
+                                text-decoration: none;
+                            }   
+                        a :hover {
+                                    transform: scale(2, 2);
+                                    color : $purple;   
+                                    @include borderRelief; 
+                                    padding: 3px;
+                                    border-radius:30%;
+                                    transition: 0.3s;
+
+                            }        
+                    }
+            }
+        }
+    }
+    
+    .bottom-header {
+      grid-row-start: 2;
+        
+       ul {
+           display: flex;
+           justify-content: center;
+           @include borderRelief2;
+           align-items:center;
+           padding: 10px;
+           border-radius:50px;
+           
+           li {
+               list-style: none;
+               @include borderRelief;
+               padding: 10px;
+               margin-left: 10px;
+               border-radius: 10%;
+            //    border-right : 1px solid black;
+            //    border-bottom : 1px solid black;
+               cursor: pointer;
+
+               &:hover{
+                transform: scale(1.2);
+                color : $purple;   
+                @include borderRelief; 
+                transition: 0.2s;
+                
+
+                    a {
+                        color : $purple;  
+                        
+                    }        
+                }  
+                
+                a {
+                    text-decoration: none;
+                    color : $ligthGrey;
+                }
+            }    
+                
+               
+           
+       }
+       
+    }
+}
+
+
+// figure {
+//     -webkit-transform:skew(30deg);
+//     @include borderBleu;
+// }
