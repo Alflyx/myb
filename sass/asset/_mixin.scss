@@ -28,3 +28,14 @@
 }
 
 
+@mixin inputRelief {
+    background: $primaryGrey;
+    color:white;
+    border:none;
+    @include borderRelief;
+    width: 90%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius:10px;
+    
+}

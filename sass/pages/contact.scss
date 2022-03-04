@@ -1,0 +1,107 @@
+
+.centralContainer {
+    display:grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto;
+    min-height: 100%;
+    background: $grey;
+    column-gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .art-left {
+        background: $grey;
+        grid-column: 1/1;
+        @include borderRelief;
+        border-radius:50px;
+    }
+    .art-central {
+        background: $grey;
+        padding: 40px;
+        grid-column: 2 / 4;
+        grid-row: 1;
+        @include borderRelief2;
+        border-radius:50px;
+
+    }
+}
+
+
+        .contact-us {
+            background: $grey;
+            color : $black;
+            font-size: large;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            margin: auto;
+            border-radius:15px;
+            @include borderRelief;
+            padding: 10px;
+
+            .cadre {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 10px;
+                @include borderRelief2;
+                border-radius:15px;
+            }
+            .pseudo-container{
+                @include borderRelief;
+                padding: 15px;
+                border-radius:15px;
+                margin: 15px;
+            }
+
+            .password-container {
+                @include borderRelief;
+                padding: 15px;
+                border-radius:15px;
+                margin: 15px;
+            }
+
+            .confirm-container {
+                @include borderRelief;
+                padding: 15px;
+                border-radius:15px;
+                margin: 15px;
+            }
+
+            .email-container {
+                @include borderRelief;
+                padding: 15px;
+                border-radius:15px;
+                margin: 15px;
+            }
+
+            #submit{
+                cursor: pointer;
+                background: $grey;
+                color: $black;
+                font-size: 1.5rem;
+                border:none;
+                border-radius:15px;
+                @include borderRelief2;
+                
+                &:hover {
+                    background: $grey;
+                    color: $ligthGrey;
+                    @include borderRelief;
+                    transition: 2s;
+                    transform: scale(0.5);
+                   
+                }
+            }
+        }
+
+        input{
+            @include inputRelief;
+
+            &:focus {
+                outline:none;
+            }
+        }

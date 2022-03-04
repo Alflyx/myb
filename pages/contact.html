@@ -1,0 +1,96 @@
+<?php
+ require '../vendor/autoload.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8706e066b0.js" crossorigin="anonymous"></script>
+    <title>Welcome to</title>
+    <link rel="stylesheet" href="../public\css\style.css" >
+</head>
+<body>
+    
+    <div class="header">
+        <div class="top-header">
+            
+            <img src="../public/img/hm.png" id="logo" alt="merville">
+            
+
+            <nav class="social-media">
+                <ul>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <div class="bottom-header">
+            <nav class="primary-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <main class="centralContainer" id="contact">
+
+        <div class="art-left"></div>
+
+       
+<div class="art-central">
+    <form action="" class="contact-us">
+
+        <div class="cadre">
+            <div class="pseudo-container">
+                <label for='surname'>User account :</label>
+                <input type="text" name="surname" id="surname" placeholder="Your name :"> 
+            </div>
+
+            <div class="password-container">
+                <label for='password'>Password :</label>
+                <input type="password" name="password" id="password" placeholder="pass > 8 :"> 
+                <p id="progress-bar"></p>
+                <span></span>
+            </div>
+
+            <div class="confirm-container">
+                <label for="confirm">Confirm password :</label>
+                <input type="password" autocomplete="off" id="confirm">
+                <span></span>
+            </div>
+
+            <div class="email-container">
+                <label for='email'>Email :</label>
+                <input type="email" name="email" id="email" placeholder="Your email :"> 
+                <span id="test"></span>
+            </div>
+        </div>
+             <input type="submit" value="Click Bait" id="submit">
+    </form>
+</div>  
+
+    </main>
+
+<footer class="footer">
+<nav class="footer-nav">
+    <ul>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+    </ul>
+</nav>
+</footer>
+
+</body>
+</html>
